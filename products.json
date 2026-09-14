@@ -1,102 +1,104 @@
+```json
 [
   {
     "id": 1,
-    "name": "BareFit Seamless Crew Neck (รุ่นไร้ตะเข็บ)",
-    "mood": "seamless",
-    "type": "t-shirt",
+    "name": "BareFit Essential Pullover Hoodie",
+    "mood": "hoodie",
+    "type": "hoodie",
     "size": "M / L / XL",
-    "price": 229,
-    "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=500&auto=format&fit=crop&q=80",
-    "description": "ผ้าพรีเมียมบางเบา 0.1mm ไร้ตะเข็บข้าง สัมผัสนุ่มเบาเหมือนผิวที่สอง"
+    "price": 599,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&auto=format&fit=crop&q=80",
+    "description": "เสื้อฮู้ดทรงคลาสสิก เนื้อผ้านุ่มและให้ความอบอุ่นกำลังดี เหมาะสำหรับใส่ในชีวิตประจำวัน"
   },
   {
     "id": 2,
-    "name": "BareFit Seamless V-Neck (คอวีไร้ตะเข็บ)",
-    "mood": "seamless",
-    "type": "t-shirt",
+    "name": "BareFit Oversized Hoodie",
+    "mood": "hoodie",
+    "type": "hoodie",
     "size": "M / L / XL",
-    "price": 229,
-    "image": "https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?w=500&auto=format&fit=crop&q=80",
-    "description": "เสื้อคอวีไร้รอยต่อ ผ้าลื่นเย็นสบาย ทรงสวยไม่ย้วยง่าย"
+    "price": 699,
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=800&auto=format&fit=crop&q=80",
+    "description": "ฮู้ดทรง Oversized ดีไซน์มินิมอล เนื้อผ้านุ่ม ใส่สบาย ให้ลุคสตรีทและแฟชั่นในตัวเดียว"
   },
   {
     "id": 3,
-    "name": "Organic Cotton Everyday Tee",
-    "mood": "cotton",
-    "type": "t-shirt",
+    "name": "BareFit Premium Crewneck Sweatshirt",
+    "mood": "sweatshirt",
+    "type": "sweatshirt",
     "size": "M / L / XL",
-    "price": 199,
-    "image": "https://images.unsplash.com/photo-1627225924765-552d49cf47ad?w=500&auto=format&fit=crop&q=80",
-    "description": "คอตตอนออร์แกนิคแท้ 100% สัมผัสนุ่ม อ่อนโยนต่อผิว ใส่ได้ทุกวัน"
+    "price": 549,
+    "image": "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=800&auto=format&fit=crop&q=80",
+    "description": "สเวตเตอร์คอกลมเนื้อนุ่ม ให้ความอบอุ่นพอดี ดีไซน์เรียบง่าย เหมาะกับการแต่งตัวทุกวัน"
   },
   {
     "id": 4,
-    "name": "Organic Cotton Oversized Tee",
-    "mood": "cotton",
-    "type": "t-shirt",
+    "name": "BareFit Heavyweight Sweatshirt",
+    "mood": "sweatshirt",
+    "type": "sweatshirt",
     "size": "M / L / XL",
-    "price": 259,
-    "image": "https://images.unsplash.com/photo-1622445275463-afa2ab738c34?w=500&auto=format&fit=crop&q=80",
-    "description": "ทรงโอเวอร์ไซส์ผ้านุ่มระบายอากาศได้ดีเยี่ยม ลดการอับชื้นตลอดวัน"
+    "price": 649,
+    "image": "https://images.unsplash.com/photo-1604644401890-0bd678c83788?w=800&auto=format&fit=crop&q=80",
+    "description": "สเวตเตอร์เนื้อหนาพิเศษ ให้ความอบอุ่นมากขึ้น ทรงสวยและอยู่ทรง เหมาะสำหรับอากาศเย็น"
   },
   {
     "id": 5,
-    "name": "Pro-Sport Flex Tee",
-    "mood": "sport",
-    "type": "t-shirt",
+    "name": "BareFit Windproof Lightweight Jacket",
+    "mood": "jacket",
+    "type": "jacket",
     "size": "M / L / XL",
-    "price": 279,
-    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500&auto=format&fit=crop&q=80",
-    "description": "ผ้ายืดหยุ่น 4 ทิศทาง แห้งไว ไม่อับชื้น เหมาะสำหรับการออกกำลังกาย"
+    "price": 799,
+    "image": "https://images.unsplash.com/photo-1544923246-77307dd628b4?w=800&auto=format&fit=crop&q=80",
+    "description": "แจ็กเก็ตน้ำหนักเบาสำหรับกันลม คล่องตัว พกพาง่าย เหมาะสำหรับเดินทางและกิจกรรมกลางแจ้ง"
   },
   {
     "id": 6,
-    "name": "Pro-Sport Active Long Sleeve",
-    "mood": "sport",
-    "type": "t-shirt",
+    "name": "BareFit Minimal Puffer Jacket",
+    "mood": "jacket",
+    "type": "jacket",
     "size": "M / L / XL",
-    "price": 329,
-    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&auto=format&fit=crop&q=80",
-    "description": "เสื้อแขนยาวกระชับกล้ามเนื้อ ระบายเหงื่อรวดเร็ว ลดแรงเสียดสี"
+    "price": 999,
+    "image": "https://images.unsplash.com/photo-1548883354-7622d03aca27?w=800&auto=format&fit=crop&q=80",
+    "description": "แจ็กเก็ตทรง Puffer สไตล์มินิมอล ช่วยเก็บความอบอุ่นและเหมาะสำหรับอากาศหนาว"
   },
   {
     "id": 7,
-    "name": "Ultra Soft Lounge Tee",
-    "mood": "lounge",
-    "type": "t-shirt",
-    "size": "Free Size",
-    "price": 249,
-    "image": "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=500&auto=format&fit=crop&q=80",
-    "description": "ทรงหลวมสวมสบาย สัมผัสเบาเหมือนไม่ได้ใส่ เหมาะสำหรับใส่นอนพักผ่อน"
+    "name": "BareFit Soft Fleece Jacket",
+    "mood": "fleece",
+    "type": "fleece",
+    "size": "M / L / XL",
+    "price": 699,
+    "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&auto=format&fit=crop&q=80",
+    "description": "เสื้อฟลีซเนื้อนุ่ม น้ำหนักเบา ให้ความอบอุ่นดี เหมาะสำหรับใส่พักผ่อนหรือออกไปข้างนอก"
   },
   {
     "id": 8,
-    "name": "Modal Premium Luxe Tee",
-    "mood": "seamless",
-    "type": "t-shirt",
+    "name": "BareFit Thermal Fleece Pullover",
+    "mood": "fleece",
+    "type": "fleece",
     "size": "M / L / XL",
-    "price": 299,
-    "image": "https://images.unsplash.com/photo-1722310752951-4d459d28c678?w=500&auto=format&fit=crop&q=80",
-    "description": "ผ้าทอใยไม้ธรรมชาติ สัมผัสเย็น ลื่นนุ่มกว่าคอตตอนทั่วไป 2 เท่า"
+    "price": 749,
+    "image": "https://images.unsplash.com/photo-1543076447-215ad9ba6923?w=800&auto=format&fit=crop&q=80",
+    "description": "เสื้อฟลีซแบบสวม เนื้อนุ่มและอุ่นสบาย เหมาะสำหรับวันที่อากาศเย็นและการเดินทาง"
   },
   {
     "id": 9,
-    "name": "Bamboo Antibacterial Polo",
-    "mood": "cotton",
-    "type": "polo",
+    "name": "BareFit Sherpa Cozy Jacket",
+    "mood": "fleece",
+    "type": "fleece",
     "size": "M / L / XL",
-    "price": 350,
-    "image": "https://images.unsplash.com/photo-1671438118097-479e63198629?w=500&auto=format&fit=crop&q=80",
-    "description": "เสื้อโปโลพรีเมียมจากเส้นใยเยื่อไผ่ธรรมชาติ นุ่ม เย็นสบาย ยับยั้งแบคทีเรียและกลิ่นอับชื้นได้ถึง 99% เหมาะสำหรับลุคทางการและสมาร์ทแคชชวล"
+    "price": 899,
+    "image": "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=800&auto=format&fit=crop&q=80",
+    "description": "แจ็กเก็ต Sherpa สัมผัสนุ่มฟู ให้ความอบอุ่นเป็นพิเศษ เหมาะสำหรับอากาศหนาวและวันพักผ่อน"
   },
   {
     "id": 10,
-    "name": "BareFit Starter Pack (เสื้อ 3 ตัว)",
-    "mood": "lounge",
+    "name": "BareFit Winter Essential Set",
+    "mood": "hoodie",
     "type": "set",
     "size": "M / L / XL",
-    "price": 650,
-    "image": "https://images.unsplash.com/photo-1564859228273-274232fdb516?w=500&auto=format&fit=crop&q=80",
-    "description": "เซ็ตเสื้อยืดสุดคุ้ม 3 ตัว คละสีคลาสสิก (Black / Slate / Nude)"
+    "price": 1290,
+    "image": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=800&auto=format&fit=crop&q=80",
+    "description": "เซ็ตเสื้อกันหนาวสุดคุ้ม ประกอบด้วย Hoodie และเสื้อแขนยาว ดีไซน์สีคลาสสิก เหมาะสำหรับแต่งตัวในฤดูหนาว"
   }
 ]
+```
