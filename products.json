@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "BareFit Essential Pullover Hoodie",
+    "name": "Essential Pullover Hoodie",
     "mood": "hoodie",
     "type": "hoodie",
     "size": "M / L / XL",
@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "name": "BareFit Oversized Hoodie",
+    "name": "Oversized Hoodie",
     "mood": "hoodie",
     "type": "hoodie",
     "size": "M / L / XL",
@@ -21,7 +21,7 @@
   },
   {
     "id": 3,
-    "name": "BareFit Premium Crewneck Sweatshirt",
+    "name": "Premium Crewneck Sweatshirt",
     "mood": "sweatshirt",
     "type": "sweatshirt",
     "size": "M / L / XL",
@@ -31,7 +31,7 @@
   },
   {
     "id": 4,
-    "name": "BareFit Heavyweight Sweatshirt",
+    "name": "Heavyweight Sweatshirt",
     "mood": "sweatshirt",
     "type": "sweatshirt",
     "size": "M / L / XL",
@@ -41,12 +41,12 @@
   },
   {
     "id": 5,
-    "name": "BareFit Windproof Lightweight Jacket",
+    "name": "Windproof Lightweight Jacket",
     "mood": "jacket",
     "type": "jacket",
     "size": "M / L / XL",
     "price": 799,
-    "image": "https://images.unsplash.com/photo-1544923246-77307dd628b4?w=800&auto=format&fit=crop&q=80",
+    "image": "",
     "description": "แจ็กเก็ตน้ำหนักเบาสำหรับกันลม คล่องตัว พกพาง่าย เหมาะสำหรับเดินทางและกิจกรรมกลางแจ้ง"
   },
   {
@@ -81,7 +81,7 @@
   },
   {
     "id": 9,
-    "name": "BareFit Sherpa Cozy Jacket",
+    "name": "Sherpa Cozy Jacket",
     "mood": "fleece",
     "type": "fleece",
     "size": "M / L / XL",
@@ -91,7 +91,7 @@
   },
   {
     "id": 10,
-    "name": "BareFit Winter Essential Set",
+    "name": "Winter Essential Set",
     "mood": "hoodie",
     "type": "set",
     "size": "M / L / XL",
