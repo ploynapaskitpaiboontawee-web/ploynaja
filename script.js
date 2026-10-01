@@ -5,9 +5,9 @@ const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyjjrbj-8p7C9MT
 const CSV_URL = 'YOUR_CSV_URL';
 
 // Supabase (anon key เปิดเผยในหน้าเว็บได้ แต่ห้ามใส่ Bot Token / service role key)
-const SUPABASE_URL = 'https://srhknjgzowbmjpaebmds.supabase.co/functions/v1/smart-worker';
-const SUPABASE_ANON_KEY = 'sb_secret_TWWiEqynaQVU50tpWgUpYQ_TcfzZfww';
-const FUNCTION_URL = `${srhknjgzowbmjpaebmds}/functions/v1/place-order`;
+const SUPABASE_URL = '';
+const SUPABASE_ANON_KEY = '';
+const FUNCTION_URL = `${}/functions/v1/place-order`;
 
 document.addEventListener('DOMContentLoaded', () => {
   const urlParams = new URLSearchParams(window.location.search);
