@@ -5,7 +5,7 @@ const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyjjrbj-8p7C9MT
 const CSV_URL = 'YOUR_CSV_URL';
 
 // Supabase (anon key เปิดเผยในหน้าเว็บได้ แต่ห้ามใส่ Bot Token / service role key)
-const SUPABASE_URL = 'https://YOUR_PROJECT_REF.supabase.co';
+const SUPABASE_URL = 'https://srhknjgzowbmjpaebmds.supabase.co/functions/v1/smart-worker';
 const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
 const FUNCTION_URL = `${SUPABASE_URL}/functions/v1/place-order`;
 
