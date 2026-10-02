@@ -39,19 +39,37 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   async function loadProducts() {
-    // ดึงจาก Supabase ก่อน
+    // รูป/หมวด/คำอธิบาย อยู่ใน products.json
+    let local = [];
+    try {
+      const res = await fetch('products.json');
+      if (res.ok) local = await res.json();
+    } catch (e) {
+      console.warn('โหลด products.json ไม่สำเร็จ', e);
+    }
+
+    // ราคา/สต็อกล่าสุด อยู่ใน Supabase
     const { data, error } = await sb
       .from('products')
       .select('*')
       .order('id', { ascending: true });
 
-    if (!error && data && data.length > 0) return data;
+    if (error || !data || data.length === 0) {
+      console.warn('โหลดจาก Supabase ไม่สำเร็จ ใช้ products.json แทน', error);
+      if (local.length === 0) throw new Error('โหลดสินค้าไม่สำเร็จ');
+      return local;
+    }
 
-    // ถ้า Supabase พลาด ใช้ products.json สำรอง
-    console.warn('โหลดจาก Supabase ไม่สำเร็จ ใช้ products.json แทน', error);
-    const res = await fetch('products.json');
-    if (!res.ok) throw new Error('โหลด products.json ไม่สำเร็จ');
-    return res.json();
+    // รวมข้อมูลโดยจับคู่ด้วยชื่อสินค้า (Supabase ทับค่าที่ซ้ำกัน)
+    const key = (v) => String(v ?? '').trim().toLowerCase();
+    const localByName = new Map(local.map(p => [key(p.name), p]));
+    return data.map(row => {
+      const base = localByName.get(key(row.name)) || {};
+      const clean = Object.fromEntries(
+        Object.entries(row).filter(([, v]) => v !== null && v !== '')
+      );
+      return { ...base, ...clean };
+    });
   }
 
   if (productList) {
