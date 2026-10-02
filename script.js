@@ -23,19 +23,40 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
   const productList = document.getElementById('product-list');
 
+  // แสดงเตือนเมื่อสินค้าเหลือ <= LOW_STOCK_THRESHOLD ชิ้น
+  const LOW_STOCK_THRESHOLD = 3;
+
   function renderProducts(products, filter) {
     const filtered = filter === 'all' ? products : products.filter(p => p.mood === filter);
-    productList.innerHTML = filtered.map(p => `
-      <div class="card">
-        <span class="card-tag tag-${esc(p.mood)}">${esc(p.mood)}</span>
-        <img src="${esc(p.image)}" alt="${esc(p.name)}">
-        <h3>${esc(p.name)}</h3>
-        <p>${esc(p.description)}</p>
-        <div class="price">฿${esc(p.price)}</div>
-        <a href="order.html?item=${encodeURIComponent(p.name)}&price=${encodeURIComponent(p.price)}"
-           class="btn" style="text-align:center;">สั่งซื้อสินค้า</a>
-      </div>
-    `).join('');
+    productList.innerHTML = filtered.map(p => {
+      const stock = p.stock === undefined || p.stock === null ? NaN : Number(p.stock);
+      const hasStock = Number.isFinite(stock);
+      const soldOut = hasStock && stock <= 0;
+      const low = hasStock && stock > 0 && stock <= LOW_STOCK_THRESHOLD;
+
+      const stockLabel = soldOut
+        ? '<p style="color:#c00;font-weight:600;">สินค้าหมด</p>'
+        : low
+        ? `<p style="color:#e67e00;font-weight:600;">เหลือเพียง ${esc(stock)} ชิ้น</p>`
+        : '';
+
+      const button = soldOut
+        ? '<span class="btn" style="text-align:center;opacity:.5;pointer-events:none;">สินค้าหมด</span>'
+        : `<a href="order.html?item=${encodeURIComponent(p.name)}&price=${encodeURIComponent(p.price)}"
+             class="btn" style="text-align:center;">สั่งซื้อสินค้า</a>`;
+
+      return `
+        <div class="card">
+          <span class="card-tag tag-${esc(p.mood)}">${esc(p.mood)}</span>
+          <img src="${esc(p.image)}" alt="${esc(p.name)}">
+          <h3>${esc(p.name)}</h3>
+          <p>${esc(p.description)}</p>
+          <div class="price">฿${esc(p.price)}</div>
+          ${stockLabel}
+          ${button}
+        </div>
+      `;
+    }).join('');
   }
 
   async function loadProducts() {
@@ -132,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (error) {
         console.error(error);
-        alert('เกิดข้อผิดพลาดในการส่งข้อมูล กรุณาลองใหม่อีกครั้ง');
+        alert('เกิดข้อผิดพลาดในการส่งข้อมูล กรุณาลองใหม่อีกครั้ง (สินค้าอาจหมดแล้ว)');
         submitBtn.innerText = originalText;
         submitBtn.disabled = false;
         return;
